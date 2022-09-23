@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    background-color: rgb(10, 9, 9);
+}
+.heart{
+    position: fixed;
+    top: -1vh;
+    height:40px;
+    width:40px;
+    font-size: 5rem;
+    color:red;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+}
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
+}
